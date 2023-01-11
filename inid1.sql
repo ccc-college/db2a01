@@ -1,3 +1,6 @@
+DROP DATABASE IF EXISTS study;
+
+CREATE DATABASE IF NOT EXISTS study DEFAULT CHARACTER SET utf8mb4;
 use study;
 CREATE TABLE slist ( id int not null primary key,name varchar(32),price int,num int );
 INSERT INTO slist (id, name, price, num) VALUES (1,'鶏肉',350,2);
